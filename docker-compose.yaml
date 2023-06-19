@@ -1,0 +1,10 @@
+version: "3"
+services:
+  idler:
+    container_name: idler
+    build: .
+    image: ghcr.io/kubero-dev/idler/idler:latest
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env

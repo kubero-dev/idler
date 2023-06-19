@@ -44,7 +44,9 @@ jobs:
           node-version: '18'
 
       - name: Install dependencies
-        run: yarn install
+        run: | 
+          yarn install
+          yarn build
 
       # Install the cosign tool except on PR
       # https://github.com/sigstore/cosign-installer
