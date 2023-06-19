@@ -80,7 +80,7 @@ jobs:
         uses: docker/metadata-action@v4
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          images: ${{ env.REGISTRY }}/${{ github.repository }}/idler
+          images: ${{ env.REGISTRY }}/${{ github.repository }}
           tags: |
             type=semver,pattern=v{{version}}
             type=semver,pattern=v{{major}}.{{minor}}
