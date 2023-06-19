@@ -3,6 +3,7 @@ ENV NODE_ENV=production
 WORKDIR /app
 
 COPY dist /app
+COPY public /app/public
 COPY package.json /app/package.json
 COPY node_modules /app/node_modules
 
